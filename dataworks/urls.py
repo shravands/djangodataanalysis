@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("sample/", combined_index, name="combined_index"),
     path("customers/", customers_data, name="customers_data"),
+    path("pandas/", app_test, name="pandas"),
     path("idreq/", app_test, name="app_test"),
     path("key_pass/<int:val>/<int:sec>/", key_pass, name="key_pass"), # passing of multiple keys in the url
     path("validated_response/", validated_response, name="validated_response"),
