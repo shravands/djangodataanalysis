@@ -18,13 +18,15 @@ from django.urls import path
 from dss.views import combined_index
 from dss.views import customers_data
 from dss.views import app_test, key_pass, validated_response
+from analysis.views import data_analizer
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("sample/", combined_index, name="combined_index"),
     path("customers/", customers_data, name="customers_data"),
-    path("pandas/", app_test, name="pandas"),
+    path("pandas/", app_test, name="pandas"),   
     path("idreq/", app_test, name="app_test"),
     path("key_pass/<int:val>/<int:sec>/", key_pass, name="key_pass"), # passing of multiple keys in the url
     path("validated_response/", validated_response, name="validated_response"),
+    path("analysis/", data_analizer, name="data_analizer"),
 ]
