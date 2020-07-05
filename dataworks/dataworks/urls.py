@@ -15,6 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf import settings
+from django.conf.urls.static import static
+
 from dss.views import combined_index
 from dss.views import customers_data
 from dss.views import app_test, key_pass, validated_response
@@ -29,4 +32,4 @@ urlpatterns = [
     path("key_pass/<int:val>/<int:sec>/", key_pass, name="key_pass"), # passing of multiple keys in the url
     path("validated_response/", validated_response, name="validated_response"),
     path("analysis/", data_analizer, name="data_analizer"),
-]
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
