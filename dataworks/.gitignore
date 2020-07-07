@@ -130,4 +130,5 @@ dmypy.json
 
 #my project specific files
 dataworks/media/eda_folder/
+dataworks/db.sqlite3
 
