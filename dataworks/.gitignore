@@ -129,6 +129,6 @@ dmypy.json
 .pyre/
 
 #my project specific files
-dataworks/media/eda_folder/
+dataworks/media/eda_folder
 dataworks/db.sqlite3
 
