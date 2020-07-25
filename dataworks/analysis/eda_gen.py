@@ -15,8 +15,8 @@ current_time = lambda: int(round(time.time()))
 output_file_name = 'eda_profile'+ str(current_time()) + '.html'
 
 credentials = { 
-    'aws_access_key_id': 'AKIA4IY2R63BUN2HGB5M',
-    'aws_secret_access_key': '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'
+    'aws_access_key_id': '',
+    'aws_secret_access_key': ''
 }
 
 def eda_csv(file_name, host_val, s3_value):
